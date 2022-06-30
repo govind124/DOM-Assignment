@@ -9,10 +9,10 @@
 </head>
 <body>
     
-    <h1 style="text-decoration:underline ;text-align: center;">DOM Manipulation</h1>
+    <h1 class="h1">DOM Manipulation</h1>
     <div id="text">Welcome To India</div>
     <br>
-    <h1>Hello World</h1>
+    <h1>1. Hello World</h1>
     <br>
     <div class="box">This is div of class box.</div>
     <br>
@@ -27,23 +27,51 @@
     </div>
     <br>
     <br>
-    <button onclick="changeDirection()">Change Flex direction</button>
+    <button type="button" onclick="changeDirection()">Change Flex direction</button>
     <br>
     <h1 id="trial">Hv a Nice Day!!</h1>
-    <button onclick="changeColor()">Click Here</button>
+    <button type="button" onclick="changeColor()">Click Here</button>
     <br>
     <br>
     <p><b>Welcome World</b></p>
     <br>
-    <button onclick="replaceText()">Replace Text</button><br>
+    <button type="button" onclick="replaceText()">Replace Text</button><br>
     <br>
-   <p style="font-size:30px ;font-weight:bold;color:white;cursor: pointer;">Time:</p>
+   <p class="clockDesign" >Time:</p>
      <nav class="time">
         <span id="hours">00</span>:
     <span id="minutes">00</span>:
-    <span id="seconds">00</span>  ::
+    <span id="seconds">00</span> ::
     <span id="ampm">AM</span>
-    </nav>
+    </nav><br>
+    <div class="dropdown">
+        <select name="" onchange="yearChange()" id="yearSelect">
+            <option value="select">Select year</option>
+            <option value="2015-2016">2015-2016</option>
+            <option value="2016-2017">2016-2017</option>
+            <option value="2017-2018">2017-2018</option>
+            <option value="2018-2019">2018-2019</option>
+            <option value="2019-2020">2019-2020</option>
+            <option value="2021-2022">2021-2022</option>
+
+        </select>
+        <p class="year">the selected year is :<span id="year"></span></p>
+    </div><br>
+    <form action="./index.html" class="form">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="name" required><br><br>
+        <label for="email">Email:</label>
+        <input oninput="emailCheck()" type="email" name="email" id="email" placeholder="@email.com" required>
+        <span id="emailcheck" class="check" >domain should be prepbytes.com!!</span><br><br>
+        <label for="phoneno">Phone No:</label>
+        <input oninput="numberCheck()" type="number" name="phoneno" id="phoneno" placeholder="Contact No." required>
+        <span class="check" id="digitcheck">number should have10 digits!!</span>
+        <span class="check" id="startcheck">number start with 91 !!</span><br><br>
+        <label for="byear">Birth Year:</label>
+        <input oninput="bYearCheck()" type="number" name="byear" id="byear" placeholder="birth year" required>
+        <span class="check" id="byearcheck">birth year should be > 1995!!</span><br><br>
+        <input type="submit" name="submit" id="submit">
+    </form>
     <script src="index.js"></script>
   
 
