@@ -33,6 +33,8 @@ function changeText(){
 // We can access the document from a window using the window. document
 // The document is part of BOM (browser object model) and dom (Document object model)
 // Properties of document objects such as title, body, cookies, etc can also be accessed by a window like this window. document.title
+//document.property_name;
+//document.method_name;
 //--------------------Window----------------------------------------------------------------------------------------------
 //Window Object: The window object is the topmost object of the DOM hierarchy. 
 // It represents a browser window or frame that displays the contents of the webpage. 
@@ -45,6 +47,9 @@ function changeText(){
 // We can access the window from the window only. i.e. window.window
 // The window is part of BOM, not DOM.
 // Properties of the window object cannot be accessed by the document object.
+//window.property_name;
+//window.method_name;
+
 //------------------------------------------------------------------------------------------------------------------
 
 6.//Create three cards on HTML page and arrange them using flex property in row or horizontal direction and also create button at the bottom named "Change Flex direction". When user clicks on this button, the cards arrangement should be changed to vertical direction.
