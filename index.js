@@ -133,8 +133,8 @@ time();
 //Add validations - phone no. should start with 91 , it should be 10 digits
 //email should be domain prepbytes.com
 
-  function numberCheck() {
-    let a = document.getElementById("phoneno").value;
+    function numberCheck() {
+    let a = document.getElementById("contact").value;
     if (!a.startsWith("91")) {
       let b = document.getElementById("startcheck");
       b.style.display = "inline";
@@ -152,12 +152,12 @@ time();
   }
   //birth year should be > 95"
   function bYearCheck() {
-    let a = document.getElementById("byear").value;
+    let a = document.getElementById("birthyear").value;
     if (a < 1995) {
-      let b = document.getElementById("byearcheck");
+      let b = document.getElementById("birthyearcheck");
       b.style.display = "inline";
     } else {
-      let b = document.getElementById("byearcheck");
+      let b = document.getElementById("birthyearcheck");
       b.style.display = "none";
     }
   }
